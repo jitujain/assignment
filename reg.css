@@ -1,0 +1,108 @@
+.outer
+	{
+		background-color: #333333;
+		}
+	.inner
+	{
+	 background: linear-gradient(to bottom right, #7340F2, white);
+	 height: 90%;
+	 width: 100%;
+	 float: left;
+
+	 
+	 margin-top: 20px;
+	 margin-bottom: 5px;
+	 
+	}
+	#pp
+	{
+		text-align: center;;
+		font-family: arial;
+		font-size: 25px;
+		color: white;
+		font: bold;;
+	}
+	input
+	{
+		height: 40px;
+		width: 40%;
+		margin-top: 10px;
+		margin-left: 30%;
+		border: solid 0px #7340F2;
+		 box-shadow: 0 0px 4px 4px #7340F2;
+	}
+	.in
+	{
+		height: 40px;
+		width: 19%;
+
+
+	}
+	.in1
+	{
+		height: 40px;
+		width: 19%;
+		margin-left: 20px;
+	}
+	.cb
+	{
+		
+		margin-left: 4px;
+	}
+	#p1
+	{
+		color: #7340F2;
+		font-size: 11px;
+
+		
+	}
+	.inm
+	{
+		height: 80px;
+		width: 40%;
+		background-color: #7340F2;
+		margin-left: 30%;
+		margin-top: 20px;
+		text-align: center;
+	}
+	#sub
+	{
+		height: 40px;
+		width: 94%;
+		background-color: FFCC00;
+		margin-left: 10px;
+		margin-top: 10px;
+		
+		border-radius: 7px;
+		font-family:'Helvetica Neue',sans-serif;
+		font: bold;
+
+
+	}
+	.bottom
+	{
+		height: 45px;
+	    width: 100%;
+	    background-color: #7340F2;
+
+	   
+	      
+
+	}
+	.bottom p
+	{
+		margin-left: 40px;
+	}
+	a{
+		text-decoration: none;
+		color: white;
+	}
+	#p2
+	{
+		margin-left: 50px;
+		direction: block;
+		height: 5px;
+		margin-top: 20px;
+		font-size: 20px;
+
+	}
