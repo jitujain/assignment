@@ -1,7 +1,21 @@
-.outer
+     .bb
+             {
+             	background-color: black;
+             }
+     .logo
+             {
+             	background-color: yellow;
+             	height: 3px;
+             	width: 3px;
+             	border-radius: 2px;
+             	float: left;
+             }
+     .outer
+
 	{
 		background-color: #333333;
 		}
+
 	.inner
 	{
 	 background: linear-gradient(to bottom right, #7340F2, white);
@@ -25,23 +39,28 @@
 	input
 	{
 		height: 40px;
-		width: 40%;
+		width: 26%;
 		margin-top: 10px;
-		margin-left: 30%;
+		margin-left: 37%;
 		border: solid 0px #7340F2;
 		 box-shadow: 0 0px 4px 4px #7340F2;
+		 padding: 6px;
+		 font-family: cambria;
+		 font-size: 14px;
+		 font: bold;
 	}
+	
 	.in
 	{
 		height: 40px;
-		width: 19%;
+		width: 12%;
 
 
 	}
 	.in1
 	{
 		height: 40px;
-		width: 19%;
+		width: 12%;
 		margin-left: 20px;
 	}
 	.cb
@@ -52,16 +71,16 @@
 	#p1
 	{
 		color: #7340F2;
-		font-size: 11px;
+		font-size: 10px;
 
 		
 	}
 	.inm
 	{
 		height: 80px;
-		width: 40%;
+		width: 26%;
 		background-color: #7340F2;
-		margin-left: 30%;
+		margin-left: 37%;
 		margin-top: 20px;
 		text-align: center;
 	}
@@ -95,7 +114,15 @@
 	}
 	a{
 		text-decoration: none;
+		
+	}
+	.inm a
+	{
 		color: white;
+	}
+	.bottom a
+	{
+		color: #828CE3;
 	}
 	#p2
 	{
@@ -105,4 +132,8 @@
 		margin-top: 20px;
 		font-size: 20px;
 
+	}
+	.error
+	{
+		box-shadow: 0 0px 4px 4px red;
 	}

@@ -1,138 +1,112 @@
 <html>
+<link rel="icon"  href="/home/jitendra/Desktop/index.jpeg">
 <title>Register Page</title>
-<style type="text/css">
-	.outer
-	{
-		background-color: #333333;
-		}
-	.inner
-	{
-	 background: linear-gradient(to bottom right, #9966FF, white);
-	 height: 90%;
-	 width: 100%;
-	 float: left;
+<head>
+    <link rel="stylesheet" type="text/css" href="/home/jitendra/Desktop/reg.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="/home/jitendra/Desktop/jquery-1.11.2.min.js"></script>
+	<script >
 
-	 
-	 margin-top: 20px;
-	 margin-bottom: 5px;
-	 
-	}
-	#pp
-	{
-		text-align: center;;
-		font-family: arial;
-		font-size: 25px;
-		color: white;
-		font: bold;;
-	}
-	input
-	{
-		height: 40px;
-		width: 40%;
-		margin-top: 10px;
-		margin-left: 30%;
-		border: solid 4px #9966FF;
-	}
-	.in
-	{
-		height: 40px;
-		width: 19%;
+    
+    $(document).ready(function(){
+    $("#sub").click(function(){
+        sessionStorage.uname=$("#fname").val();
+        sessionStorage.lname=$("#lname").val();
+        
+        var pwd=$("#pass").val();
+        if(pwd.length<8)
+        {
+        	alert("password must be contain 8 character");
+         $("#pass").focus();
+          $("#pass").addclass("error");
+          //$("#pass").css("background-color","yellow");
+          $(event.delegateTarget).addclass("error");
+         return false;
+        	
+       
+        }
+       else if ( !pwd.match(/[a-z]/) )
+        {
+            alert("password must be contain at least one lower case");
+            $("#pass").focus();
+          return false;
+        }
+      else  if ( !pwd.match(/[A-Z]/) ) 
+        {
+            alert("password must be contain at least one upper case");
+            $("#pass").focus();
+          return false;
+        }
+       else if (! pwd.match(/\d/) )
+        {
+            alert("password must be contain at least one number ");
+            $("#pass").focus();
+          return false;
+        }
 
+       var mail=$("#email").val();
+       if(!mail.match("jitu@gmail.com") )
+       {
+               alert("email is wrong");
+               $("#pass").focus();
+          return false;
+       }
 
-	}
-	.in1
-	{
-		height: 40px;
-		width: 19%;
-		margin-left: 12px;
-	}
-	.cb
-	{
-		
-		margin-left: 4px;
-	}
-	#p1
-	{
-		color: #9966FF;
-		font-size: 11px;
+        var mail=$("#uname").val();
+       if(!mail.match("jitu") )
+       {
+               alert("username is wrong");
+               $("#pass").focus();
+          return false;
+       }
+          
+       
+       	//$(this).load("authenticate.htm");
+       	
+       
+    });
 
-		
-	}
-	.inm
-	{
-		height: 80px;
-		width: 40%;
-		background-color: #9966FF;
-		margin-left: 30%;
-		margin-top: 20px;
-		text-align: center;
-	}
-	#sub
-	{
-		height: 40px;
-		width: 95%;
-		background-color: FFCC00;
-		margin-left: 10px;
-		margin-top: 10px;
-		font-weight: 50px;
-		border-radius: 7px;
-		font-family:'Helvetica Neue',sans-serif;
+});
 
 
-	}
-	.bottom
-	{
-		height: 45px;
-	    width: 100%;
-	    background-color: #9966FF;
-	      
 
-	}
-	a{
-		text-decoration: none;
-	}
-	#p2
-	{
-		margin-left: 50px;
-		direction: block;
-		height: 5px;
-		margin-top: 20px;
-		font-size: 20px;
+ 
+	</script>
+</head>
 
-	}
-</style>
+
 <body class="outer">
 	            <p id="p2">
-	            	<span style="color:white;">[ ]&nbsp;Inno</span>
+	            	<span style="color:white;"><img src="/home/jitendra/Desktop/logo.jpg">  Inno</span>
 	            	<span style="color:#FFCC00">Training</span>
 	            </p>
 		<div class="inner">
 		
 			<p id="pp"><b>Please Complete your deatils<b></p>
-			<form>
-		    <input type="email" placeholder="enter email" required><br>
-		    <input type="text" placeholder="enter username"  required> <br>
-		    <input type="password" placeholder="create password" required><br>
-		    <input type="text" placeholder="first name" class="in" required>
-		    <input type="text" placeholder="last name" class="in1" required><br>
-		    <input type="checkbox" ><span id="p1">keep me logged when using this computer</span><br>
-		    <input type="checkbox" ><span id="p1">Email me a weekly newslatter</span>
+			<form id="checkvalue"  action="authenticate.htm" >
+		    <input type="email"    placeholder="Enter email" required id="email"><br>
+		    <input type="text"     placeholder="Enter username"  required id="uname"> <br>
+		    <input type="password" placeholder="Create password" required id="pass"><br>
+		    <input type="text"     placeholder="First name" class="in" required id="fname">
+		    <input type="text"     placeholder="Last name" class="in1" required id="lname"><br>
+		    <input type="checkbox"><span id="p1">keep me logged when using this computer</span><br>
+		    <input type="checkbox"><span id="p1">Email me a weekly newslatter</span>
 		    <input type="checkbox" class="cb" ><span id="p1">Email me a daily newslatter</span>
 		    <div class="inm">
-		    	<input type="submit" value="Complete Sign-up" id="sub">
-		    	<span  style="font-size:8; margin-top:10px;color:#9922cc;text-align:center;vertical-align: middle;">By Registering you confirm that you agree with our
+		    	<input type="submit" value="Complete Sign-up" id="sub" >
+		    	<span  style="font-size:9; margin-top:10px;color:#828CE3;text-align:center;vertical-align: middle;">&nbsp;   By Registering you confirm that you agree with our
 		    	<br>
-		    		<a href="">Terms &amp Conditions</a>and <a href="">Privacy policy</a>
+		    		<a href="">Terms &amp Conditions</a>&nbsp; and &nbsp;<a href="">Privacy policy</a>
 		    	</span>
 		    </div>
 		</form>
 			
 			<div class="bottom">
-				<span  style="font-size:10;color:#9922cc;">20004-2014 Innotraining&nbsp;&nbsp;&nbsp;&nbsp;
+				<p  style="font-size:10;color:#828CE3;margin-left:80px;"><br>2004-2014 Innotraining&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="#">Contact us</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"> Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Terms</a>
                  
 
-				</span>
+				</p>
 			</div>
 		</div>
 	

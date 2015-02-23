@@ -1,21 +1,35 @@
 <html>
 <title>Authenticate Page</title>
+<head>
+	<script src="/home/jitendra/Desktop/jquery-1.11.2.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script >
+
+//document.getElementById("uname").innerHTML=sessionStorage.uname;
+
+        $(document).ready(function(){
+       $("#uname").html(sessionStorage.uname+"  "+sessionStorage.lname);
+
+    $("#sub").click(function(){
+
+    	window.location='/home/jitendra/Desktop/register.htm';
+    });
+});
+	</script>
+</head>
 <style type="text/css">
 	.outer
 	{
 		background-color: #333333;
-		}
+	}
 	.inner
 	{
-	 background: linear-gradient(to bottom right, #9966FF, white);
-	 height: 90%;
+	 background: linear-gradient(to bottom right, #7340F2, white);
+	 height: 86%;
 	 width: 100%;
 	 float: left;
-
-	 
-	 margin-top: 20px;
+     margin-top: 20px;
 	 margin-bottom: 5px;
-	 
 	}
 	#p2
 	{
@@ -30,10 +44,9 @@
 	{
 		margin-left: 50px;
 		font-family: arial;
-		font-size: 35px;
+		font-size: 30px;
 		color: white;
 		font: bold;
-		margin-top:20px; 
 	}
 	#sub
 	{
@@ -41,60 +54,95 @@
 		width: 20%;
 		margin-left: 160px;
 		background-color: FFCC00;
-		border: solid 4px #9966FF;
+		border: solid 2px #7340F2;
 		border-radius: 5px;
-		
+		 box-shadow: 0 0px 5px 5px #7340F2;
+
+
+	}
+	.sub
+	{
+		height: 50px;
+		width: 20%;
+		margin-left: 190px;
+		background-color: FFCC00;
+		border: solid 2px #7340F2;
+		border-radius: 5px;
+		 box-shadow: 0 0px 5px 5px #7340F2;
+		 margin-top: 10px;
+		  font-family: cambria;
+		font-size: 30px;
+		vertical-align: middle;
+		font: bold;
+		text-align: center
+
 
 
 	}
 	.bottom
 	{
-		height: 45px;
+		height: 85px;
 	    width: 100%;
-	    background-color: #9966FF;
-	    margin-bottom: 0px;
-	    float:left;
-
-	    
-	      
-
+	    background-color: #7340F2;
+	    margin-top: 25%;
+	}
+	.bottom a{
+		text-decoration: none;
 	}
 	#dd
 	{
-		height: 20%;
+		height: 30%;
 		width: 20%;
-		background-color: #9966ff;
+		background-color: #7340F2;
 		margin-top: 50px;
 		margin-left: 130px;
 		float: left;
+		text-align: center;
+		vertical-align: middle;
+		color: white;
+		font-family: arial;
+		font-size: 20px;
+		padding: 20px;
+		
+	}
+	img
+	{
+		margin-top: 20px;
+	}
+	.bottom a
+	{
+		color: #828CE3;
 	}
 	</style>
 
 <body class="outer">
 	            <p id="p2">
-	            	<span style="color:white;">[ ]&nbsp;Inno</span>
+	            	<span style="color:white;">   Inno</span>
 	            	<span style="color:#FFCC00">Training</span>
 	            </p>
 		<div class="inner">
-		<span id="pp"><b>Welcome<b></b></span><br>
-		<span style="font-size: 20px;" id="pp"><b>Please check your Inbox for an email that will confirm your email address.<b></span>
+		<div style="margin-top:20px;float:left;"><span id="pp"><b>Welcome</b></span><br> </div><div id="uname" class="sub"></div>
+		<span style="font-size: 18px;" id="pp"><b>Please check your Inbox for an email that will confirm your email address.<b></span>
 		<input type="button" value="Continue to the page you were on" id="sub">
 		<div id="dd">
-			
+			Complete your profile
+			<a href="register.htm"><img src="/home/jitendra/Desktop/index.jpeg"></a>
 		</div>
 		<div id="dd">
-			
+			Comment on your article
+			<a href="register.htm"><img src="/home/jitendra/Desktop/images3.jpeg"></a>
 		</div>
 		<div id="dd">
-			
+			Meet users in the fourm
+			<a href="register.htm"><img src="/home/jitendra/Desktop/images2.jpeg"></a>
 		</div>
 		
 		<div class="bottom">
-				<span  style="font-size:10;color:#9922cc;">2004-2014 Innotraining&nbsp;&nbsp;&nbsp;&nbsp;
+				<p  style="font-size:10;color:#828CE3;margin-left:80px;"><br><br>2004-2014 Innotraining&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="#">Contact us</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"> Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Terms</a>
                  
 
-				</span>
+				</p>
 			</div>
 		</div>
 		</body>
