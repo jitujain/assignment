@@ -1,6 +1,7 @@
      .bb
              {
              	background-color: black;
+
              }
      .logo
              {
@@ -14,6 +15,7 @@
 
 	{
 		background-color: #333333;
+		margin: 0px;
 		}
 
 	.inner
@@ -43,7 +45,7 @@
 		margin-top: 10px;
 		margin-left: 37%;
 		border: solid 0px #7340F2;
-		 box-shadow: 0 0px 4px 4px #7340F2;
+		 box-shadow: 0 0px 3px 3px #7340F2;
 		 padding: 6px;
 		 font-family: cambria;
 		 font-size: 14px;
@@ -100,7 +102,7 @@
 	}
 	.bottom
 	{
-		height: 45px;
+		height: 87px;
 	    width: 100%;
 	    background-color: #7340F2;
 
