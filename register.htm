@@ -1,114 +1,56 @@
-<html>
-<link rel="icon"  href="/home/jitendra/Desktop/index.jpeg">
-<title>Register Page</title>
-<head>
-    <link rel="stylesheet" type="text/css" href="/home/jitendra/Desktop/reg.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="/home/jitendra/Desktop/jquery-1.11.2.min.js"></script>
-	<script >
+  <html>
+  <link rel="icon"  href="/home/jitendra/Desktop/index.jpeg">
+  <title>Register Page</title>
+  <head>
+      <link rel="stylesheet" type="text/css" href="/home/jitendra/Desktop/reg.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="/home/jitendra/Desktop/reg.js"></script>
+  	
+  </head>
 
-    
-    $(document).ready(function(){
-    $("#sub").click(function(){
-        sessionStorage.uname=$("#fname").val();
-        sessionStorage.lname=$("#lname").val();
-        
-        var pwd=$("#pass").val();
-        if(pwd.length<8)
-        {
-        	alert("password must be contain 8 character");
-         $("#pass").focus();
-          $("#pass").addclass("error");
-          //$("#pass").css("background-color","yellow");
-          $(event.delegateTarget).addclass("error");
-         return false;
-        	
-       
-        }
-       else if ( !pwd.match(/[a-z]/) )
-        {
-            alert("password must be contain at least one lower case");
-            $("#pass").focus();
-          return false;
-        }
-      else  if ( !pwd.match(/[A-Z]/) ) 
-        {
-            alert("password must be contain at least one upper case");
-            $("#pass").focus();
-          return false;
-        }
-       else if (! pwd.match(/\d/) )
-        {
-            alert("password must be contain at least one number ");
-            $("#pass").focus();
-          return false;
-        }
+  <!--about main body and logo of the page  -->
 
-       var mail=$("#email").val();
-       if(!mail.match("jitu@gmail.com") )
-       {
-               alert("email is wrong");
-               $("#pass").focus();
-          return false;
-       }
+  <body class="mainbody">
+  	            <p id="logo">
+  	            	<span style="color:white;"><img src="/home/jitendra/Desktop/logo.jpg">  Inno</span>
+  	            	<span style="color:#FFCC00">Training</span>
+  	            </p>
+                
+      <!-- this is the color internal div on which form is situated -->
 
-        var mail=$("#uname").val();
-       if(!mail.match("jitu") )
-       {
-               alert("username is wrong");
-               $("#pass").focus();
-          return false;
-       }
-          
-       
-       	//$(this).load("authenticate.htm");
-       	
-       
-    });
+  		<div class="formdes">
 
-});
+  		<!-- form description -->
 
+  			<p id="formid"><b>Please Complete your deatils<b></p>
+  			<form id="checkvalue"  action="authenticate.htm" >
+  		    <input type="email"    placeholder="Enter email" required id="email"><br>
+  		    <input type="text"     placeholder="Enter username"  required id="uname"> <br>
+  		    <input type="password" placeholder="Create password" required id="pass"><br>
+  		    <input type="text"     placeholder="First name" class="in" required id="fname">
+  		    <input type="text"     placeholder="Last name" class="in1" required id="lname"><br>
+  		    <input type="checkbox"><span id="checkboxid">keep me logged when using this computer</span><br>
+  		    <input type="checkbox"><span id="checkboxid">Email me a weekly newslatter</span>
+  		    <input type="checkbox" class="checkboxid" ><span id="checkboxid">Email me a daily newslatter</span>
+          <!-- code of the submit button and that div-->
+  		    <div class="submit">
+  		    	<input type="submit" value="Complete Sign-up" id="sub" >
+  		    	<span class="submittext" >&nbsp;   By Registering you confirm that you agree with our
+  		    	<br>
+  		    		<a href="">Terms &amp Conditions</a>&nbsp; and &nbsp;<a href="">Privacy policy</a>
+  		    	</span>
+  		    </div>
+  		</form>
+      <!-- bottom description -->
+  			
+  			<div class="bottom">
+  				<p class="bottomtext" ><br>2004-2014 Innotraining&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="#">Contact us</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"> Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Terms</a>
+                   
 
-
- 
-	</script>
-</head>
-
-
-<body class="outer">
-	            <p id="p2">
-	            	<span style="color:white;"><img src="/home/jitendra/Desktop/logo.jpg">  Inno</span>
-	            	<span style="color:#FFCC00">Training</span>
-	            </p>
-		<div class="inner">
-		
-			<p id="pp"><b>Please Complete your deatils<b></p>
-			<form id="checkvalue"  action="authenticate.htm" >
-		    <input type="email"    placeholder="Enter email" required id="email"><br>
-		    <input type="text"     placeholder="Enter username"  required id="uname"> <br>
-		    <input type="password" placeholder="Create password" required id="pass"><br>
-		    <input type="text"     placeholder="First name" class="in" required id="fname">
-		    <input type="text"     placeholder="Last name" class="in1" required id="lname"><br>
-		    <input type="checkbox"><span id="p1">keep me logged when using this computer</span><br>
-		    <input type="checkbox"><span id="p1">Email me a weekly newslatter</span>
-		    <input type="checkbox" class="cb" ><span id="p1">Email me a daily newslatter</span>
-		    <div class="inm">
-		    	<input type="submit" value="Complete Sign-up" id="sub" >
-		    	<span  style="font-size:9; margin-top:10px;color:#828CE3;text-align:center;vertical-align: middle;">&nbsp;   By Registering you confirm that you agree with our
-		    	<br>
-		    		<a href="">Terms &amp Conditions</a>&nbsp; and &nbsp;<a href="">Privacy policy</a>
-		    	</span>
-		    </div>
-		</form>
-			
-			<div class="bottom">
-				<p  style="font-size:10;color:#828CE3;margin-left:80px;"><br>2004-2014 Innotraining&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#">Contact us</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"> Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Terms</a>
-                 
-
-				</p>
-			</div>
-		</div>
-	
-</body>
-</html>
+  				</p>
+  			</div>
+  		</div>
+  	
+  </body>
+  </html>

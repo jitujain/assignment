@@ -1,0 +1,98 @@
+		.mainbody
+		{
+			background-color: #333333;
+			margin: 0px;
+		}
+		.inner
+		{
+		 background: linear-gradient(to bottom right, #7340F2, white);
+		 height: 88%;
+		 width: 100%;
+		 float: left;
+	     margin-top: 20px;
+		 margin-bottom: 5px;
+		}
+		#logo
+		{
+			margin-left: 50px;
+			direction: block;
+			height: 5px;
+			margin-top: 20px;
+			font-size: 20px;
+
+		}
+		#wctext
+		{
+			margin-left: 50px;
+			font-family: arial;
+			font-size: 30px;
+			color: white;
+			font: bold;
+		}
+		#sub
+		{
+			height: 50px;
+			width: 20%;
+			margin-left: 160px;
+			background-color: FFCC00;
+			border: solid 2px #7340F2;
+			border-radius: 5px;
+			 box-shadow: 0 0px 3px 3px #7340F2;
+
+
+		}
+		.sub
+		{
+			height: 36px;
+			width: 20%;
+			margin-left: 190px;
+			background-color: FFCC00;
+			border: solid 2px #7340F2;
+			border-radius: 5px;
+			 box-shadow: 0 0px 3px 3px #7340F2;
+			 margin-top: 10px;
+			  font-family: cambria;
+			font-size: 28px;
+			vertical-align: middle;
+			font: bold;
+			text-align: center;
+			padding: 5px;
+
+
+
+		}
+		.bottom
+		{
+			height: 87px;
+		    width: 100%;
+		    background-color: #7340F2;
+		    margin-top: 25%;
+		}
+		.bottom a{
+			text-decoration: none;
+		}
+		#middleimage
+		{
+			height: 30%;
+			width: 20%;
+			background-color: #7340F2;
+			margin-top: 50px;
+			margin-left: 102px;
+			float: left;
+			text-align: center;
+			vertical-align: middle;
+			color: white;
+			font-family: arial;
+			font-size: 20px;
+			padding: 20px;
+			
+		}
+		img
+		{
+			margin-top: 20px;
+		}
+		.bottom a
+		{
+			color: #828CE3;
+		}
+		
