@@ -12,11 +12,12 @@
 {
 	background-color: #333333;
 	margin: 0px;
+	margin-bottom: 40px;
 }
 
 .formdes
 {
-	background: linear-gradient(to bottom right, #7340F2, white);
+	background: linear-gradient(to bottom, #6A60A7, #A091EC);
 	height: 90%;
 	width: 100%;
 	float: left;
@@ -30,18 +31,19 @@
 {
 	text-align: center;;
 	font-family: arial;
-	font-size: 25px;
+	font-size: 26px;
+	box-shadow: 0 0px 4px 4px #7065A7;
 	color: white;
 	font: bold;;
 }
 .textbox
 {
-	height: 40px;
+	height: 36px;
 	width: 26%;
 	margin-top: 10px;
 	margin-left: 37%;
 	border: solid 0px #7340F2;
-	box-shadow: 0 0px 3px 3px #7340F2;
+	box-shadow: 0 0px 3px 3px #7065A7;
 	padding: 6px;
 	font-family: cambria;
 	font-size: 14px;
@@ -50,12 +52,12 @@
 
 .in
 {
-	height: 40px;
+	height: 36px;
 	width: 12%;
 	margin-top: 10px;
 	margin-left: 37%;
 	border: solid 0px #7340F2;
-	box-shadow: 0 0px 3px 3px #7340F2;
+	box-shadow: 0 0px 3px 3px #7065A7;
 	padding: 6px;
 	font-family: cambria;
 	font-size: 14px;
@@ -64,12 +66,12 @@
 }
 .in1
 {
-	height: 40px;
+	height: 36px;
 	width: 12%;
-	margin-left: 20px;
+	margin-left: 21px;
 	margin-top: 10px;
 	border: solid 0px #7340F2;
-	box-shadow: 0 0px 3px 3px #7340F2;
+	box-shadow: 0 0px 3px 3px #7065A7;
 	padding: 6px;
 	font-family: cambria;
 	font-size: 14px;
@@ -78,12 +80,12 @@
 .checkboxid
 {
 
-	margin-left: 4px;
+	margin-left: 6px;
 
 	margin-top: 10px;
 	
 	border: solid 0px #7340F2;
-	box-shadow: 0 0px 3px 3px #7340F2;
+	box-shadow: 0 0px 4px 4px #7065A7;
 	padding: 6px;
 	font-family: cambria;
 	font-size: 14px;
@@ -91,17 +93,18 @@
 }
 #checkboxid
 {
-	color: #7340F2;
-	font-size: 10px;
+	color: #7065A7;
+	font-size: 9px;
+	margin-left: 6px;
 }
 .checkboxid1
 {
 	
 	
-	margin-top: 10px;
+	margin-top: 16px;
 	margin-left: 37%;
 	border: solid 0px #7340F2;
-	box-shadow: 0 0px 3px 3px #7340F2;
+	box-shadow: 0 0px 4px 4px #7065A7;
 	padding: 6px;
 	font-family: cambria;
 	font-size: 14px;
@@ -111,9 +114,9 @@
 
 .submit
 {
-	height: 80px;
+	height: 86px;
 	width: 26%;
-	background-color: #7340F2;
+	background-color: #9286D2;
 	margin-left: 37%;
 	margin-top: 20px;
 	text-align: center;
@@ -122,33 +125,35 @@
 {
 	font-size:9;
 	margin-top:10px;
-	color:#828CE3;
+	color:#7065A7;
 	text-align:center;
 	vertical-align: middle;
 }
 #sub
 {
 	height: 40px;
-	width: 94%;
-	background-color: FFCC00;
-	margin-left: 10px;
+	width: 97%;
+	background: linear-gradient(to bottom, #FFCC19, #FFAF11);
+	margin-left: 2px;
 	margin-top: 10px;
 	border-radius: 7px;
-	font-family:'Helvetica Neue',sans-serif;
+	border: 0px;
 	font: bold;
+	margin-bottom: 7px;
 
 }
 .bottom
 {
-	height: 87px;
+	height: 43px;
 	width: 100%;
-	background-color: #7340F2;
-	margin-top: 90px;
+	background-color: #504683;
+	
 }
 .bottom p
 {
 	margin-left: 40px;
 	margin-top: 50px;
+	vertical-align: middle;
 }
 a{
 	text-decoration: none;
@@ -160,7 +165,7 @@ a{
 }
 .bottom a
 {
-	color: #828CE3;
+	color: #7065A7;
 }
 #logo
 {
@@ -178,7 +183,7 @@ a{
 .bottomtext
 {
 	font-size:10;
-	color:#828CE3;
+	color:#7065A7;
 	margin-left:80px;
 
 }
