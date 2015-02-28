@@ -32,7 +32,7 @@
 	text-align: center;;
 	font-family: arial;
 	font-size: 26px;
-	box-shadow: 0 0px 4px 4px #7065A7;
+    text-shadow: 2px 2px #504683;
 	color: white;
 	font: bold;;
 }
@@ -42,8 +42,8 @@
 	width: 26%;
 	margin-top: 10px;
 	margin-left: 37%;
-	border: solid 0px #7340F2;
-	box-shadow: 0 0px 3px 3px #7065A7;
+	border: solid 5px #7D73B1;
+	
 	padding: 6px;
 	font-family: cambria;
 	font-size: 14px;
@@ -56,8 +56,8 @@
 	width: 12%;
 	margin-top: 10px;
 	margin-left: 37%;
-	border: solid 0px #7340F2;
-	box-shadow: 0 0px 3px 3px #7065A7;
+	border: solid 5px #7D73B1;
+	
 	padding: 6px;
 	font-family: cambria;
 	font-size: 14px;
@@ -70,8 +70,7 @@
 	width: 12%;
 	margin-left: 21px;
 	margin-top: 10px;
-	border: solid 0px #7340F2;
-	box-shadow: 0 0px 3px 3px #7065A7;
+	border: solid 5px #7D73B1;
 	padding: 6px;
 	font-family: cambria;
 	font-size: 14px;
@@ -83,9 +82,8 @@
 	margin-left: 6px;
 
 	margin-top: 10px;
+border: solid 5px #7D73B1;
 	
-	border: solid 0px #7340F2;
-	box-shadow: 0 0px 4px 4px #7065A7;
 	padding: 6px;
 	font-family: cambria;
 	font-size: 14px;
@@ -103,8 +101,7 @@
 	
 	margin-top: 16px;
 	margin-left: 37%;
-	border: solid 0px #7340F2;
-	box-shadow: 0 0px 4px 4px #7065A7;
+	border: solid 5px #7D73B1;
 	padding: 6px;
 	font-family: cambria;
 	font-size: 14px;
@@ -140,6 +137,12 @@
 	border: 0px;
 	font: bold;
 	margin-bottom: 7px;
+	text-shadow: 0px 1px black;
+
+
+}
+
+{
 
 }
 .bottom
