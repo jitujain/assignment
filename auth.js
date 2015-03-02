@@ -4,7 +4,7 @@
 
 	    $("#sub").click(function(){
 
-	    	window.location='/home/jitendra/Desktop/register.htm';
+	    	window.location='register.htm';
 	    });
 	});
 		
